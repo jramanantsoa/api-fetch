@@ -1,18 +1,7 @@
 import React, { Fragment } from "react";
 import { Pie } from "react-chartjs-2";
 
-const Chart = ({ projects }) => {
-  const python = Object.keys(
-    projects.filter(function (item) {
-      return item.language == "Python";
-    })
-  ).length;
-  const react = Object.keys(
-    projects.filter(function (item) {
-      return item.language == "React";
-    })
-  ).length;
-  console.log(python);
+const Chart = () => {
   const state = {
     labels: ["Python", "React"],
     datasets: [
@@ -20,7 +9,7 @@ const Chart = ({ projects }) => {
         label: "Languages",
         backgroundColor: ["#d12121", "#5f21d1"],
         hoverBackgroundColor: ["#2199d1", "#2199d1"],
-        data: [python, react],
+        data: [2, 3],
       },
     ],
   };

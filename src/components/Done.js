@@ -1,10 +1,10 @@
 import  React,{Fragment} from 'react'
 import Navbar from './Navbar'
 
-const Project = ({ projects }) => {
+const Done = ({ done }) => {
     return(
         <div>
-          {projects.map((project) => (
+          {done.map((project) => (
               <Fragment>
             <div class="card">
               <div class="card-body">
@@ -21,4 +21,4 @@ const Project = ({ projects }) => {
         </div>
     )
 }
-export default Project
+export default Done

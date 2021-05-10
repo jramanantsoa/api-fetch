@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const Inprogress = ({ inprogress }) => {
     return(
         <div>
-            <h2>In progress and project ideas</h2>
+            <h2>In progress</h2>
           {inprogress.map((el) => (
               <Fragment>
             <div class="card">
