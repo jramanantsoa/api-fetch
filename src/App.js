@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
-import Contact from './components/Contact'
+import React, {Component, Fragment} from 'react';
+import Navbar from './components/Navbar';
+import Project from './components/Project'
+import Footer from './components/Footer'
     
     class App extends Component {
       state = {
@@ -17,7 +19,12 @@ import Contact from './components/Contact'
       }
       render () {
         return (
-          <Contact projects={this.state.projects} />
+          <Fragment>
+          <Navbar></Navbar>
+          <a href="https://djaaango.herokuapp.com/">Link to fetched API</a>
+          <Project projects={this.state.projects} />
+          <Footer></Footer>
+          </Fragment>
         )
       }
     }
