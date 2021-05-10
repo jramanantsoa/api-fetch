@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Contact from './components/Contact'
+    
+    class App extends Component {
+      state = {
+        projects:[]
+      }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+      //when the compotent is mounted, fetches data from API and copies JSON into state as projects
+      componentDidMount(){
+        fetch('https://djaaango.herokuapp.com/projects/')
+        .then(res => res.json())
+        .then((data)=>{
+          this.setState({projects : data})
+        })
+        .catch(console.log)
+      }
+      render () {
+        return (
+          <Contact projects={this.state.projects} />
+        )
+      }
+    }
+    
+    export default App
