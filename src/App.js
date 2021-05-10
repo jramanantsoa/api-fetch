@@ -38,8 +38,29 @@ class App extends Component {
       <Fragment>
         <Navbar></Navbar>
         <center>
-          <p>Don't panick if an app takes time to load ! Heroku can be slow sometimes :)</p>
-          <p>This app is made with REACT and fetches data from a <a target="_blank" href="https://djaaango.herokuapp.com/">Django REST API</a></p>
+          <p>
+            Don't panick if an app takes time to load ! Heroku can be slow
+            sometimes :)
+          </p>
+          <p>
+            This app is made with REACT and fetches data from a{" "}
+            <a
+              target="_blank"
+              href="https://djaaango.herokuapp.com/"
+              rel="noreferrer"
+            >
+              Django REST API
+            </a>{" "}
+            (
+            <a
+              href="https://github.com/jramanantsoa/api-fetch"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source code here
+            </a>
+            )
+          </p>
         </center>
         <div className="container">
           <div className="row">
