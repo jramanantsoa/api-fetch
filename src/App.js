@@ -23,7 +23,6 @@ import Footer from './components/Footer'
           <Navbar></Navbar>
           <a href="https://djaaango.herokuapp.com/">Link to fetched API</a>
           <Project projects={this.state.projects} />
-          <Footer></Footer>
           </Fragment>
         )
       }
