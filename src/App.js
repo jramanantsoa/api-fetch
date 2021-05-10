@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Navbar from "./components/Navbar";
 import Section from "./Section";
 import Chart from "./components/Chart";
+import Links from "./components/Links";
 
 class App extends Component {
   state = {
@@ -84,6 +85,7 @@ class App extends Component {
           progress={this.state.progress.length}
           ideas={this.state.ideas.length}
         ></Chart>
+        <Links></Links>
       </Fragment>
     );
   }
