@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Done from './components/Done'
 import Inprogress from './components/Inprogress'
 import Section from './Section';
-import Chart from 'chart.js/auto';
+import Chart from './components/Chart';
     
     class App extends Component {
       state = {
@@ -53,6 +53,11 @@ import Chart from 'chart.js/auto';
             </div>
           </div>
           </div>
+          <Chart
+          done={this.state.done.length}
+          progress={this.state.progress.length}
+          ideas={this.state.ideas.length}
+          ></Chart>
           </Fragment>
         
         )

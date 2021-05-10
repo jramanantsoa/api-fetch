@@ -1,20 +1,28 @@
 import React, { Fragment } from "react";
 import { Pie } from "react-chartjs-2";
 
-const Chart = () => {
+const Chart = ({done,progress,ideas}) => {
   const state = {
-    labels: ["Python", "React"],
+    labels: ['Done', 'In progress', 'Ideas'],
     datasets: [
       {
-        label: "Languages",
-        backgroundColor: ["#d12121", "#5f21d1"],
-        hoverBackgroundColor: ["#2199d1", "#2199d1"],
-        data: [2, 3],
-      },
-    ],
-  };
+        label: 'Rainfall',
+        backgroundColor: [
+          '#D1C4E9',
+          '#BBDEFB',
+          '#F8BBD0',
+        ],
+        hoverBackgroundColor: [
+          "#90A4AE",
+          "#90A4AE",
+          "#90A4AE",
+        ],
+        data: [done, progress,ideas]
+      }
+    ]
+  }
   return (
-    <div className="card" style={{ width: "25rem" }}>
+    <div className="card chartdiv" style={{ width: "15rem" }}>
       <div className="card-body">
         <div>
           <Pie

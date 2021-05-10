@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E0E0E0;
 }
 
 code {
@@ -14,4 +15,11 @@ code {
 .card:hover{
   transform: scale(1.2);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.chartdiv{
+  position: fixed;
+  top:10%;
+}
+.nav{
+  background-color: tomato;
 }
