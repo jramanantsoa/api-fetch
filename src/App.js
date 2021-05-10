@@ -37,6 +37,7 @@ class App extends Component {
     return (
       <Fragment>
         <Navbar></Navbar>
+        <center><p>Don't panick if an app takes time to load ! Heroku can be slow sometimes :)</p></center>
         <div className="container">
           <div className="row">
             <div className="col">
